@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Raktapa Chaenglew 653040459-8</title>
+    </head>
+
+    <body>
+        <style>
+            h1 {
+                text-align: center;
+            }
+            .border {
+                border: 1px solid;
+            }
+            .block {
+                display: block;
+                background-color: lightpink;
+                margin: 10px;
+                padding: 15px;
+            }
+            .inline {
+                display: inline;
+                background-color: palegreen;
+                padding: 10px;
+                margin: 5px;
+            }
+            .flex {
+                display: flex;
+                margin: 10px;
+            }
+            .item {
+                padding: 15px;
+                margin: 5px;
+                width: 300px;
+            }
+            .grow-1 {
+                background-color: rgb(174, 236, 236);
+                flex-grow: 1;
+            }
+            .grow-2 {
+                background-color: lemonchiffon;
+                flex-grow: 2;
+            }
+            .shrink-1 {
+                background-color: lightseagreen;
+                flex-shrink: 1;
+            }
+            .shrink-2 {
+                background-color: lightsalmon;
+                flex-shrink: 2;
+            }
+            .question {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .hint {
+                font-size: 18px;
+                font-weight: bold;
+            }
+        </style>
+
+        <h1>Exercise about Property display</h1>
+        <p class="question">Your most frequently used apps</p>
+        <div class="border">
+            <p class="block">Youtube</p>
+            <p class="block">Chrome</p>
+            <p class="block">Calender</p>
+        </div>
+
+        <p class="question">Places you want to visit in Thailand</p>
+        <div class="border">
+            <p>
+                <span class="inline">Chiang Rai</span>
+                <span class="inline">Krabee</span>
+                <span class="inline">Khon Kaen</span>
+            </p>
+        </div>
+
+        <p class="question">Coutries you want to visit</p>
+        <div class="border">
+                <div class="flex">
+                    <div class="item grow-1">England</div>
+                    <div class="item grow-1">Japan</div>
+                    <div class="item grow-2">Germany</div>  
+                </div>
+        </div>
+
+        <p class="question">Activities you want to do</p>
+        <div class="border">
+                <div class="flex">
+                    <div class="item shrink-1">Running</div>
+                    <div class="item shrink-1">walking</div>
+                    <div class="item shrink-2">Swimming</div>  
+                </div>
+        </div>
+
+    </body>
+</html>
